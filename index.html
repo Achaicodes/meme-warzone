@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meme Warzone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🔥 Meme Warzone 🔥</h1>
+
+  <div id="faction-select">
+    <h2>Pick Your Faction</h2>
+    <button onclick="selectFaction('$Rick')">$Rick</button>
+    <button onclick="selectFaction('$SGN')">$SGN</button>
+    <button onclick="selectFaction('$Buidl')">$Buidl</button>
+    <button onclick="selectFaction('$Based')">$Based</button>
+  </div>
+
+  <div id="meme-battle" style="display: none;">
+    <h2 id="faction-title"></h2>
+    <img src="https://i.imgflip.com/30b1gx.jpg" alt="meme" width="300">
+    <input type="text" id="caption" placeholder="Enter your caption" />
+    <button onclick="submitCaption()">Submit</button>
+    <p id="submitted-message" style="display:none; color:green;">✅ Caption Submitted!</p>
+  </div>
+
+  <div id="leaderboard">
+    <h2>🏆 Leaderboard</h2>
+    <ul>
+      <li>$Rick - 12 wins</li>
+      <li>$SGN - 9 wins</li>
+      <li>$Buidl - 6 wins</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
